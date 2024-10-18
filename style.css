@@ -3,6 +3,26 @@
     color: white;
 }
 
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#pageContainer {
+    padding-bottom: 2.5rem;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: black;
+    text-align: center;
+}
+
 #icons img {
     width: 2.5em;
 }
