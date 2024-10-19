@@ -1,5 +1,5 @@
 * {
-    background-color: rgb(65, 65, 65);
+    background-color: black;
     color: white;
 }
 
@@ -10,6 +10,24 @@ body {
     padding: 0;
 }
 
+#topBar * {
+    width: 100%;
+    background-color: blue;
+}
+
+#hero * {
+    background-color: green;
+}
+
+#aboutMe * {
+    background-color: purple;
+}
+
+#contact * {
+    background-color: magenta;
+}
+
+
 #pageContainer {
     padding-bottom: 2.5rem;
 }
@@ -19,7 +37,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 2.5rem;
-    background-color: black;
+    background-color: white;
     text-align: center;
 }
 
