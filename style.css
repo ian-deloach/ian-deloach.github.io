@@ -21,7 +21,7 @@ body {
 #hero {
     background-color: green;
     display: inline-block;
-    width: 40%;
+    width: 45%;
 }
 
 #hero * {
@@ -31,7 +31,7 @@ body {
 #heroImage {
     background-color: navy;
     display: inline-block;
-    width: 40%;
+    width: 45%;
 }
 
 
@@ -41,8 +41,17 @@ body {
     text-align: center;
 }
 
-#aboutMe * {
-    background-color: purple;
+#heroContainer {
+    width: 90%;
+    margin: auto;
+}
+
+#contact {
+    background-color: magenta;
+    width: 90%;
+    align-content: center;
+    text-align: center;
+    margin: auto;
 }
 
 #contact * {
