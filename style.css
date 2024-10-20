@@ -1,4 +1,5 @@
 /*TODO Clean up code by grouping up redundant rules. */
+/*TODO ADD PHONE VERSION */
 
 * {
     color: white;
@@ -71,10 +72,21 @@ body {
     bottom: 0;
     width: 100%;
     height: 2.5rem;
-    background-color: white;
+    background-color: green;
     text-align: center;
 }
 
 #icons img {
     width: 2.5em;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        background-position: center;
+    }
+
+    #heroContainer * {
+        width: 95%;
+    }
 }
