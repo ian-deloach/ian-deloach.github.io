@@ -1,8 +1,13 @@
 /*TODO Clean up code by grouping up redundant rules. */
 
 * {
-    background-color: black;
     color: white;
+}
+
+body {
+    background-image: url(/images/backgroundPlaceholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body {
@@ -25,31 +30,18 @@ body {
     margin-top: 0;
 }
 
-#hero {
-    background-color: green;
-    display: inline-block;
-    width: 45%;
-}
-
-#hero * {
-    background-color: green;
-}
-
-#heroImage {
-    background-color: navy;
-    display: inline-block;
-    width: 45%;
-}
-
 
 /* TODO Remove background color rule when adding image */
+/* TODO honestly this whole rule can be deleted when I'm done */
 #heroImage * {
     background-color: navy;
     text-align: center;
 }
 
 #heroContainer {
-    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
     margin: auto;
 }
 
@@ -58,6 +50,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     width: 80%;
     margin: auto;
+    text-align: center;
 }
 
 #contact {
