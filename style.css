@@ -35,20 +35,16 @@ body {
 #topBar * {
     width: 100%;
     height: 4rem;
-    padding-top: 0;
-    margin-top: 0;
-}
-
-#heroContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 50%;
+    padding: 0;
     margin: 0;
+    text-align: right;
 }
 
-#heroContainer img {
-    size: 20%;
+#nameImage {
+    width: 50%;
+    margin-left: 5%;
 }
+
 
 #skillsContainer {
     display: grid;
