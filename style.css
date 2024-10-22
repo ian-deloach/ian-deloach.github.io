@@ -64,6 +64,14 @@ body {
     padding: 0;
 }
 
+#projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
 #contact {
     width: 90%;
     align-content: center;
