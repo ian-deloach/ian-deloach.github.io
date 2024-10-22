@@ -2,19 +2,29 @@
 
 * {
     color: white;
-}
+}   
 
 body {
     background-image: url(/images/backgroundPlaceholder.png);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-body {
     position: relative;
     min-height: 100vh;
     margin: 0;
     padding: 0;
+
+    animation: fadeIn ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 #pageContainer {
@@ -51,6 +61,12 @@ body {
     width: 80%;
     margin: auto;
     text-align: center;
+}
+
+#skillsContainer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 #contact {
