@@ -1,5 +1,4 @@
 /*TODO Clean up code by grouping up redundant rules. */
-/*TODO ADD PHONE VERSION */
 
 * {
     color: white;
@@ -80,6 +79,7 @@ body {
     width: 2.5em;
 }
 
+/*TODO UPDATE PHONE VERSION */
 @media only screen and (max-width: 600px) {
 
     body {
