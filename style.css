@@ -120,10 +120,22 @@ body {
 @media only screen and (max-width: 600px) {
 
     body {
-        background-position: center;
+        background-image: none;
+        background-color: black;
     }
 
-    #heroContainer * {
-        width: 95%;
+    #aboutMe {
+        padding: 0em 2em 1em;
     }
+
+    #nameImage {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #projectsContainer {
+        display: revert;
+    }
+
 }
