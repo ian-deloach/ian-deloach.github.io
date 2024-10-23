@@ -105,6 +105,12 @@ body {
 
 #icons img {
     width: 4em;
+    margin: .5em;
+    transition: transform 0.3s ease-in-out;
+}
+
+#icons img:hover {
+    transform: scale(1.2);
 }
 
 /*TODO UPDATE PHONE VERSION */
