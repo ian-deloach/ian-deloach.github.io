@@ -22,7 +22,7 @@ a {
 
 
 body {
-    background-image: url(/images/backgroundPlaceholder.png);
+    /* background-image: url(/images/backgroundPlaceholder.png); */
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
@@ -60,6 +60,12 @@ body {
 #nameImage {
     width: 50%;
     margin-left: 5%;
+}
+
+#aboutMe {
+    border: 1px solid white;
+    border-radius: 10px 25px;
+    width: 50%;
 }
 
 
