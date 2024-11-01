@@ -20,6 +20,46 @@ a {
     }
 }
 
+@keyframes shadowDisplay {
+    0% {
+        box-shadow: 0 0 0 0 white;
+    }
+
+    100% {
+        box-shadow: 10px 10px 0 0 white;
+    }
+}
+
+@keyframes shadowHide {
+    0% {
+        box-shadow: 10px 10px 0 0 white;
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 white;
+    }
+}
+
+@keyframes shadowDisplayBlue {
+    0% {
+        box-shadow: 0 0 0 0 #2001ff;
+    }
+
+    100% {
+        box-shadow: 10px 10px 0 0 #2001ff;
+    }
+}
+
+@keyframes shadowHideBlue {
+    0% {
+        box-shadow: 10px 10px 0 0 #2001ff;
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 #2001ff;
+    }
+}
+
 
 body {
     /* background-image: url(/images/backgroundPlaceholder.png); */
@@ -65,7 +105,19 @@ body {
 #aboutMe {
     border: 1px solid white;
     border-radius: 10px 25px;
-    width: 50%;
+    width: 60%;
+    padding: 1em;
+    margin: auto;
+    animation: shadowHide .2s;
+}
+
+#aboutMe:hover {
+    animation: shadowDisplay .2s;
+    animation-fill-mode: forwards;
+}
+
+#aboutMe h2 {
+    text-align: center;
 }
 
 
@@ -82,7 +134,12 @@ body {
     margin: 10%;
     padding: 5%;
     border-radius: 10px 25px;
-    box-shadow: 10px 10px 0 0 #2001ff;
+    animation: shadowHideBlue .2s;
+}
+
+#skillsContainer section:hover {
+    animation: shadowDisplayBlue .2s;
+    animation-fill-mode: forwards;
 }
 
 #skillsContainer section * {
@@ -105,26 +162,6 @@ body {
 
 #projectsContainer img {
     height: 160px;
-}
-
-@keyframes shadowDisplay {
-    0% {
-        box-shadow: 0 0 0 0 white;
-    }
-
-    100% {
-        box-shadow: 10px 10px 0 0 white;
-    }
-}
-
-@keyframes shadowHide {
-    0% {
-        box-shadow: 10px 10px 0 0 white;
-    }
-
-    100% {
-        box-shadow: 0 0 0 0 white;
-    }
 }
 
 .project {
