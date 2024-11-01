@@ -1,10 +1,5 @@
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+html {
+    scroll-behavior: smooth;
 }
 
 * {
@@ -15,6 +10,16 @@
 a {
     text-decoration: none;
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 body {
     background-image: url(/images/backgroundPlaceholder.png);
@@ -37,11 +42,17 @@ body {
     padding-bottom: 2.5rem;
 }
 
-#topBar * {
-    width: 100%;
+#topBar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid white;
+}
+
+#topBar p {
+    width: 25%;
     height: 4rem;
     padding: 0;
-    margin: 0;
+    margin: auto;
     text-align: right;
 }
 
